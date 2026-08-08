@@ -81,6 +81,7 @@
     #marquee {
         height: 45px;
         background-color: #fcd8ea;
+        background-image: var();
         width: 100%;
     }
 

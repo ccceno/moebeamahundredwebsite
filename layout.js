@@ -68,7 +68,9 @@ const nesting = getNestingString();
  */
 
 const headerEl = `
-    <div id="topbar" style="text-align: center;" class="sticky">mwah</div>
+    <div id="topbar" style="text-align: center;" class="sticky">
+        ceno's zone :3
+    </div>
             <header id="marquee" style="margin-bottom: 0px;">
                 <ul>
                     <marquee direction="right">
@@ -113,7 +115,11 @@ const sidebarEl1 = `
             <aside>
                 <div class="statusbox" style="margin-bottom: 10px;">
                     <h2>MENU</h2>
-                    <img src="https://dl.glitter-graphics.com/pub/223/223979qnh6dwmabq.gif" style="width: 175px; height: 25px">
+                    <img src="https://64.media.tumblr.com/33df89a383a78edbade2c6d872e4ecc1/b18aff3ce9323114-08/s250x400/996beaeaacaaee707c01c7d9e2152074fc1e701c.gif">
+                    <img src="https://files.catbox.moe/uq5ss1.gif">
+                    <img src="https://64.media.tumblr.com/f9e08918dd6c5a2003647f806274b47c/64107bd354cd4629-78/s250x400/e3b6ee522d3ed4eebfe23ea59b09b54254cceab6.gif">
+                    <img src="https://dl.glitter-graphics.com/pub/223/223979qnh6dwmabq.gif">
+                    <img src="https://64.media.tumblr.com/69c8d9407a98a3dcc380c43a9292f698/b18aff3ce9323114-81/s250x400/036dc286f655d5ec174d083a555a25c7771db08f.gif">
                     <a href="guestbook.html">sign my guestbook</a>
                     <ul style="padding-left:20px;">
                         <li>This is where I'll put my guestbook, blinkies, etc</li>
