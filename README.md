@@ -1,7 +1,7 @@
 # moebeamahundredwebsite
 An attempt at making a moe personal website to store personal projects and acts as a web portfolio
 
-![alt Text](https://github.com/[ccceno]/[moebeamahundredwebsite]/blob/[main]/preview-2026-08-08.png?raw=true)
+![website preview](preview-2026-08-08.png)
 
 **try it**: https://ccceno.github.io/moebeamahundredwebsite/
 
