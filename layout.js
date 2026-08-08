@@ -1,13 +1,14 @@
-// initLayout() is called once the DOM (the HTML content of your website) has been loaded.
+// js guide from Petrapixel on neocities
+// initLayout() is called once the DOM (the HTML content) has been loaded.
 document.addEventListener("DOMContentLoaded", function () {
     // The layout will be loaded on all pages that do NOT have the "no-layout" class in the <body> element.
     if (!document.body.classList.contains("no-layout")) {
-        // Inserting your header and footer:
+        // Inserting header and footer:
         document.body.insertAdjacentHTML("afterbegin", headerEl);
         document.body.insertAdjacentHTML("beforeend", footerEl);
 
         // Inserting sidebars:
-        const wrapperElement = document.querySelector("main"); // you might have to change this selector to something like .my-wrapper
+        const wrapperElement = document.querySelector("main");
         if (wrapperElement) {
             wrapperElement.insertAdjacentHTML("afterbegin", sidebarEl1);
         }
@@ -15,14 +16,9 @@ document.addEventListener("DOMContentLoaded", function () {
         initActiveLinks();
     }
 
-    // add your own javascript code here...
 });
 
-/* ********************************* */
-
-/**
- *  F U N C T I O N S
- */
+/*  F U N C T I O N S */
 
 function initActiveLinks() {
     // This function adds the class "active" to any link that links to the current page.
@@ -46,8 +42,6 @@ function initActiveLinks() {
 }
 
 function getNestingString() {
-    // This function prepares the "nesting" variable for your header and footer (see below).
-    // Only change this function if you know what you're doing.
     const currentUrl = window.location.href
         .replace("http://", "")
         .replace("https://", "")
@@ -58,11 +52,7 @@ function getNestingString() {
     return ".." + "/..".repeat(numberOfSlahes - 2);
 }
 
-/* ********************************* */
-
-/**
- *  H T M L
- */
+/* H T M L*/
 
 const nesting = getNestingString();
 
@@ -119,12 +109,6 @@ const headerEl = `
         </nav>
 `;
 
-const footerEl = `
-        <footer id="footer" style="margin-top: 10px;">
-            <p>© 2026 cenozone</p>
-        </footer>
-`;
-
 const sidebarEl1 = `
             <aside>
                 <div class="statusbox" style="margin-bottom: 10px;">
@@ -145,4 +129,10 @@ const sidebarEl1 = `
                         <li><a href="https://github.com/waterprisem/ant_game">Previous hackathon game</a></li>
                 </div>
             </aside>
+`;
+
+const footerEl = `
+        <footer id="footer" style="margin-top: 10px;">
+            <p>© 2026 cenozone</p>
+        </footer>
 `;
