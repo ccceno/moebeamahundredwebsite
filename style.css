@@ -21,6 +21,7 @@
 
     body {
         font-family: 'craft', sans-serif;
+        font-size: medium;
         margin: 0;
         background-color: #08031A;
         /* you can delete the line below if you'd prefer to not use an image */
@@ -33,45 +34,58 @@
         box-sizing: border-box;
     }
 
-    /* below this line is CSS for the layout */
+    .content {
+        flex-grow: 1;
+        min-width: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
 
-    /* this is a CSS comment
-    to uncomment a line of CSS, remove the * and the /
-    before and after the text */
-
-
-    /* the "container" is what wraps your entire website */
-    /* if you want something (like the header) to be Wider than
-    the other elements, you will need to move that div outside
-    of the container */
-    #container {
+    header {
         max-width: 900px;
-        /* this is the width of your layout! */
-        /* if you change the above value, scroll to the bottom
-      and change the media query according to the comment! */
         margin: 10px auto;
-        /* this centers the entire page */
+    }
+
+    aside {
+        background-color: #dba1b600;
+        width: 200px;
+        padding: 0px;
+        font-size: smaller;
+        flex-shrink: 0;
+        padding: 0px;
+    }
+
+    main {
+        background-color: #d19aae00;
+        padding: 0px;
+        flex-grow: 1;
+        max-width: 900px;
+        align-items: flex-start;
+        display: flex;
+        margin: 10px auto;
+        gap: 10px;
+    }
+
+    footer {
+        background-color: #dba1b6;
+        /* background color for footer */
+        width: 100%;
+        height: 50px;
+        padding: 10px;
+        text-align: center;
+        max-width: 900px;
+        margin: 10px auto;
     }
 
     /* the area below is for all links on your page
     EXCEPT for the navigation */
-    #container a {
-        color: #fbf5fb;
-        font-weight: bold;
-        /* if you want to remove the underline
-      you can add a line below here that says:
-      text-decoration:none; */
-    }
-
     #header {
-        width: 100%;
-        /* header color here! */
+        width: 900px;
+        margin: 0 auto;
         height: 500px;
-        /* this is only for a background image! */
-        /* if you want to put images IN the header, 
-      you can add them directly to the <div id="header"></div> element! */
         background-image: var(--header-image);
-        background-size: 100%;
+        background-position: center;
     }
 
     /* navigation section!! */
@@ -84,8 +98,9 @@
     #navbar {
         height: 50px;
         background-color: #c28ea1;
-        /* navbar color */
         width: 100%;
+        max-width: 900px;
+        margin: 10px auto;
     }
 
     #navbar ul {
@@ -111,40 +126,8 @@
 
     /* navigation link when a link is hovered over */
     #navbar li a:hover {
-        color: #a49cba;
+        color: #4f0a2c;
         text-decoration: underline;
-    }
-
-    #flex {
-        display: flex;
-    }
-
-    /* this colors BOTH sidebars
-    if you want to style them separately,
-    create styles for #leftSidebar and #rightSidebar */
-    aside {
-        background-color: #dba1b6;
-        width: 200px;
-        padding: 20px;
-        font-size: smaller;
-        /* this makes the sidebar text slightly smaller */
-    }
-
-
-    /* this is the color of the main content area,
-    between the sidebars! */
-    main {
-        background-color: #d19aae00;
-        flex: 1;
-        padding: 0px;
-        order: 2;
-    }
-
-    div.sticky {
-        position: sticky;
-        top: 0;
-        padding: 50px;
-        font-size: 20px;
     }
 
 
@@ -153,22 +136,6 @@
     if you're using both sidebars, the "order" value
     tells the CSS the order in which to display them.
     left sidebar is 1, content is 2, and right sidebar is 3! */
-
-    #leftSidebar {
-        order: 1;
-        background-color: #dba1b600;
-        padding: 0px;
-    }
-
-    footer {
-        background-color: #dba1b6;
-        /* background color for footer */
-        width: 100%;
-        height: 50px;
-        padding: 10px;
-        text-align: center;
-        /* this centers the footer text */
-    }
 
     h1,
     h2,
@@ -185,7 +152,7 @@
         color: #fbf5fb;
     }
 
-    /* this is just a cool box, it's the darker colored one */
+    /* boxes */
     .statusbox {
         background-color: #c76f8f;
         border: 1px solid #fbf5fb;
@@ -210,9 +177,13 @@
         padding: 10px;
     }
 
-    /* CSS for extras */
+    /* topbar */
 
     #topbar {
+        max-width: 900px;
+        margin: 10px auto;
+        position: sticky;
+        top: 0px;
         width: 100%;
         height: 30px;
         padding: 10px;
@@ -223,36 +194,9 @@
 
     /* MEDIA QUERY */
 
-    /* so you wanna change the width of your page? 
-    by default, the container width is 900px.
-    in order to keep things responsive, take your new height,
-    and then subtrack it by 100. use this new number as the 
-    "max-width" value below
-    */
-
     @media only screen and (max-width: 800px) {
         #flex {
             flex-wrap: wrap;
-        }
-
-        aside {
-            width: 100%;
-        }
-
-        /* the order of the items is adjusted here for responsiveness!
-      since the sidebars would be too small on a mobile device.
-      feel free to play around with the order!
-      */
-        main {
-            order: 1;
-        }
-
-        #leftSidebar {
-            order: 2;
-        }
-
-        #rightSidebar {
-            order: 3;
         }
 
         #navbar ul {
