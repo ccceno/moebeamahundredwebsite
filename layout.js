@@ -92,7 +92,6 @@ const headerEl = `
                         <img src="blinkies/nichijou.png" width="150px" height="45px">
                         <img src="blinkies/tetodance.gif" width="80px" height="45px"> <!--ruri!!1! :3 on Tumblr-->
                         <img src="blinkies/mikufigurine.jpg" width="150px" height="45px">
-                        <img src="blinkies/bnimg.gif" width="150px" height="45px"> <!--chezimu.neocities.org-->
                         <img src="blinkies/cutebun.jpg" width="150px" height="45px">
                         <img src="blinkies/madoka.gif" width="80px" height="45px"> <!--PuniPlush on devianart-->
                         <img src="blinkies/animaru.jpg" width="150px" height="45px">
@@ -104,8 +103,8 @@ const headerEl = `
         <nav id="navbar" style="margin-bottom: 10px; margin-top: 5px;">
                 <ul>
                     <li><a href="index.html">home</a></li>
-                    <li><a href="#about">me me me</a></li>
-                    <li><a href="#projects">projects</a></li>
+                    <li><a href="index.html#about">me me me</a></li>
+                    <li><a href="projects.html">projects</a></li>
                     <li><a href="#contact">make a connection</a></li>
                 </ul>
         </nav>
@@ -131,8 +130,17 @@ const sidebarEl1 = `
                 </div>
                 <div id="projects" class="box" style="margin-bottom: 10px;">
                         <h2>PROJECTS</h2>
+                        <p>Mini preview of some of my projects!</p>
                         <li><a href="https://github.com/ccceno/moebeamahundredwebsite">This website</a></li>
                         <li><a href="https://github.com/waterprisem/ant_game">Previous hackathon game</a></li>
+                        <p>Still interested? Let's check out my projects page here! <a href="projects.html">Click me!</a></p>
+                </div>
+                <div id="contact" class="box">
+                        <h1>CONNECT /W ME</h1>
+                        <p>Main / Work Gmail: ying.magie@gmail.com</p>
+                         <p>Business Email: cenozonee@gmail.com</p>
+                        <p>LinkedIn: <a href="https://www.linkedin.com/in/ying-ying-zhang-5093aa311/" target="_blank">Click me!</a> </p>
+                        <p>Github: ccceno</p>
                 </div>
             </aside>
 `;
