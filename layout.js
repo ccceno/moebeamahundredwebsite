@@ -115,18 +115,32 @@ const sidebarEl1 = `
                 <div class="statusbox" style="margin-bottom: 10px;">
                     <h2>MENU</h2>
                     <img src="https://64.media.tumblr.com/33df89a383a78edbade2c6d872e4ecc1/b18aff3ce9323114-08/s250x400/996beaeaacaaee707c01c7d9e2152074fc1e701c.gif">
+                    <img src="https://file.garden/aYO424ZX-UqGSAzg/Blinkies/dvds.gif">
                     <img src="https://files.catbox.moe/uq5ss1.gif">
                     <img src="https://64.media.tumblr.com/f9e08918dd6c5a2003647f806274b47c/64107bd354cd4629-78/s250x400/e3b6ee522d3ed4eebfe23ea59b09b54254cceab6.gif">
+                    <img src="https://64.media.tumblr.com/c003cd3ab91ca64675a09cc1f7edceeb/844bbaf950a7e4c2-9a/s250x400/23d5def194361b142d154f7285c2822eff5cddee.gifv">
+                    <img src="https://64.media.tumblr.com/f0a39dc7bd69e8afca157b15199b3cf0/cb6b574964496cbb-b5/s250x400/2269d759143fc87e8f31aff1b2cde38c52df7915.gifv">
+                    <img src="https://petrapixel.neocities.org/assets/img/blinkies/blinkies/b%20(33).gif">
                     <img src="https://dl.glitter-graphics.com/pub/223/223979qnh6dwmabq.gif">
                     <img src="https://64.media.tumblr.com/69c8d9407a98a3dcc380c43a9292f698/b18aff3ce9323114-81/s250x400/036dc286f655d5ec174d083a555a25c7771db08f.gif">
-                    <a href="guestbook.html">sign my guestbook</a>
-                    <ul style="padding-left:20px;">
-                        <li>This is where I'll put my guestbook, blinkies, etc</li>
-                    </ul>
+                    <button class="button1" onclick="window.location.href='guestbook.html'" style="padding: 10px; margin-top: 20px;">Sign My Guestbook~</button>
+                    <p>Playing: <i> Be Yourself Or Die Dreaming - Nouvelle Story</i></p>
+                        <audio controls autoplay muted loop style="width: 100%; margin-bottom: 10px;">
+                            <source src="assets/Be Yourself Or Die Dreaming.mp3" type="audio/mpeg">
+                            <source src="assets/Be Yourself Or Die Dreaming.ogg" type="audio/ogg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    <img src="https://petrapixel.neocities.org/assets/img/blinkies/buttons/button%20(2).gif"><img src="https://petrapixel.neocities.org/assets/img/blinkies/buttons/hello-kitty.gif">
+                    <img src="https://petrapixel.neocities.org/assets/img/blinkies/stamps/ascii.gif" width="80px" height="45px">
+                    <img src="https://petrapixel.neocities.org/assets/img/blinkies/stamps/stamp%20(5).gif" width="80px" height="45px">
+                    <img src="https://petrapixel.neocities.org/assets/img/blinkies/stamps/stamp%20(6).gif" width="80px" height="45px">
+                    <img src="https://petrapixel.neocities.org/assets/img/blinkies/stamps/lps.gif" width="80px" height="45px">
+                    <img src="https://petrapixel.neocities.org/assets/img/blinkies/stamps/nekoatsume.gif" width="80px" height="45px">
                 </div>
                 <div class="updatesbox" style="margin-bottom: 10px;">
-                    <h2>UPDATES</h2>
-                    <p>planning on adding a scrollbar, making the nav more interesting, etc</p>
+                    <h2>NEWS</h2>
+                    <p>Site is still under construction!</p>
+                    <img src="https://azs-graphics-n-things.neocities.org/blinkies/131-takeanap.webp" width="150px" height="25px">
                 </div>
                 <div id="projects" class="box" style="margin-bottom: 10px;">
                         <h2>PROJECTS</h2>
@@ -134,7 +148,8 @@ const sidebarEl1 = `
                         <li><a href="https://github.com/ccceno/moebeamahundredwebsite">This website</a></li>
                         <li><a href="https://github.com/waterprisem/ant_game">Previous hackathon game</a></li>
                         <p>Still interested? Let's check out my projects page here! <a href="projects.html">Click me!</a></p>
-                </div>
+                        <img src="https://azs-graphics-n-things.neocities.org/blinkies/777-kudos.gif">
+                    </div>
                 <div id="contact" class="box">
                         <h1>CONNECT /W ME</h1>
                         <p>Main / Work Gmail: ying.magie@gmail.com</p>
@@ -142,7 +157,11 @@ const sidebarEl1 = `
                         <p>LinkedIn: <a href="https://www.linkedin.com/in/ying-ying-zhang-5093aa311/" target="_blank">Click me!</a> </p>
                         <p>Github: <a href="https://github.com/ccceno" target="_blank">Click me!</a> @ccceno </p>
                         <p>Discord: @seeleeeeee. </p>
-                </div>
+                        <img src="https://petrapixel.neocities.org/assets/img/blinkies/userboxes/drew-gooden.png" width="180px" height="45px">
+                        <img src="https://file.garden/aYO424ZX-UqGSAzg/Blinkies/bbb9e0eabd285d0d94682f91f41307e49997f056.gifv" width="180px" height="30px">
+                        <img src="https://file.garden/aYO424ZX-UqGSAzg/Badges/3a09119f574f84bcf165f5bed8047d2a4f6f9f17.gifv" width="180px" height="45px">
+                        <img src="https://file.garden/aYO424ZX-UqGSAzg/Blinkies/112433987_HS1HSAozxhHRrK9.gif" width="180px" height="30px">
+                        <img src="https://i.pinimg.com/1200x/3c/78/8f/3c788f656bc5dad550fa2bc02f2c9700.jpg" width="180px" height="45px">
             </aside>
 `;
 
