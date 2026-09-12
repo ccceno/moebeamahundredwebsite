@@ -69,7 +69,7 @@ const nesting = getNestingString();
 
 const headerEl = `
     <div id="topbar" style="text-align: center;" class="sticky">
-        ceno's zone :3
+        ying's domain :3
     </div>
             <header id="marquee" style="margin-bottom: 0px;">
                 <ul>
@@ -140,7 +140,8 @@ const sidebarEl1 = `
                         <p>Main / Work Gmail: ying.magie@gmail.com</p>
                          <p>Business Email: cenozonee@gmail.com</p>
                         <p>LinkedIn: <a href="https://www.linkedin.com/in/ying-ying-zhang-5093aa311/" target="_blank">Click me!</a> </p>
-                        <p>Github: ccceno</p>
+                        <p>Github: <a href="https://github.com/ccceno" target="_blank">Click me!</a> @ccceno </p>
+                        <p>Discord: @seeleeeeee. </p>
                 </div>
             </aside>
 `;
